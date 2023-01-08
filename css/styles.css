@@ -2,12 +2,12 @@
 :root {
     --body-text-color: #434455;
     --titele-color: #2E2F42;
-    --bacground-footer-color: #2E2F42;
+    --background-footer-color: #2E2F42;
     --primary-brand-color: #4D5AE5;
     --white-title-color: #FFFFFF;
     --background-block-color: #E5E5E5;
     --accent-color: #E7E9FC;
-    --bacground-button-color:  #F4F4FD;
+    --background-button-color:  #F4F4FD;
     --button-active-color: #404BBF;
     --customers-color: #8E8F99;
     --footer-hover-link: #31D0AA;
@@ -237,7 +237,7 @@ body {
     padding-bottom: 188px;
     
     text-align: center;
-    background-color: var(--bacground-footer-color);
+    background-color: var(--background-footer-color);
    
     max-width: 1440px;
     margin: 0 auto;
@@ -309,7 +309,7 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 8px;
-    background-color: var(--bacground-button-color);
+    background-color: var(--background-button-color);
     display: flex;
     justify-content: center;
 
@@ -384,7 +384,7 @@ body {
 }
 
 .team {
-    background-color: var(--bacground-button-color);
+    background-color: var(--background-button-color);
 }
 .team-items {
     display: flex;
@@ -445,7 +445,7 @@ body {
 }
 
 .soc-icon {
-    fill: var(--bacground-button-color);
+    fill: var(--background-button-color);
 }
 
 .soc-link:hover,
@@ -505,7 +505,7 @@ body {
 /* --------------FOOTER--------------- */
 
 .footer.section {
-    background-color: var(--bacground-footer-color);
+    background-color: var(--background-footer-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -518,7 +518,7 @@ body {
 }
 
 .footer-logo {
-    color: var(--bacground-button-color);
+    color: var(--background-button-color);
     
 }
 
@@ -576,7 +576,7 @@ body {
 }
 
 .footer-soc-icon {
-    fill: var(--bacground-button-color)
+    fill: var(--background-button-color)
 
 }
 
@@ -612,7 +612,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--primary-brand-color);
-    background-color: var(--bacground-button-color);
+    background-color: var(--background-button-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 
@@ -683,4 +683,42 @@ body {
     color: var(--body-text-color);
 }
 
+.overlay {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.overlay-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: var(--primary-brand-color);
+    
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+
+}
+
+.gallery-link:hover .overlay-card,
+.gallery-link:focus .overlay-card {
+    transform: translateY(0);
+}
+
+.overlay-text{
+
+    position: absolute;
+    padding: 40px 32px 164px 32px;
+    
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-button-color);
+
+    
+
+
+}
 
